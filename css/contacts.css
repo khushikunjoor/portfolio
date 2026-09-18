@@ -1,0 +1,24 @@
+footer {
+    background: var(--orange);
+
+    border-top: 2px solid var(--white);
+
+    padding: 28px 8%;
+
+    display: flex;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    font-size: 13px;
+}
+
+footer span,
+footer a {
+    color: var(--white);
+}
+
+footer a {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}

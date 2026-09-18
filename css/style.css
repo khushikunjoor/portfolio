@@ -1,0 +1,12 @@
+/* =========================================================
+   KHUSHI KUNJOOR PORTFOLIO
+   MASTER STYLESHEET
+   ========================================================= */
+
+@import url("variables.css");
+@import url("base.css");
+@import url("navbar.css");
+@import url("sections.css");
+@import url("projects.css");
+@import url("contact.css");
+@import url("responsive.css");

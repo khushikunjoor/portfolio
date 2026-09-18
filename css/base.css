@@ -1,0 +1,152 @@
+/* =========================================================
+   RESET
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-main);
+    background: var(--green);
+    color: var(--white);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+body,
+button,
+a {
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+button {
+    font-family: var(--font-main);
+}
+
+main {
+    padding-top: 78px;
+}
+
+section {
+    position: relative;
+    padding: 110px 8%;
+}
+
+.page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+span {
+    color: var(--white);
+}
+
+strong {
+    color: var(--white);
+    font-weight: 800;
+}
+
+.eyebrow {
+    color: var(--white);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.page-title {
+    color: var(--white);
+    font-size: clamp(60px, 9vw, 120px);
+    line-height: .9;
+    letter-spacing: -5px;
+    margin-bottom: 35px;
+}
+
+.page-intro {
+    max-width: 780px;
+    color: var(--white);
+    font-size: 20px;
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 7px;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 52px;
+    padding: 0 25px;
+
+    background: var(--orange);
+    border: 2px solid var(--orange);
+    color: var(--white);
+
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    transition:
+        transform .25s ease,
+        background .25s ease;
+}
+
+.button:hover {
+    background: var(--green);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+.button-outline {
+    background: transparent;
+    border-color: var(--white);
+}
+
+.button-outline:hover {
+    background: var(--orange);
+    border-color: var(--orange);
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    background: var(--orange);
+    margin: 60px 0;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(25px);
+    transition:
+        opacity .6s ease,
+        transform .6s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

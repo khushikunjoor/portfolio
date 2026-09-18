@@ -1,0 +1,289 @@
+/* =========================================
+   PROJECTS OVERVIEW
+========================================= */
+
+.projects-intro {
+    max-width: 900px;
+    margin-bottom: 55px;
+}
+
+.projects-intro h1 {
+    color: var(--white);
+    font-size: clamp(55px, 9vw, 110px);
+    line-height: .9;
+    letter-spacing: -5px;
+    margin-bottom: 25px;
+}
+
+.projects-intro p {
+    max-width: 760px;
+    color: var(--white);
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 380px;
+    padding: 32px;
+    background: var(--orange);
+    border: 2px solid var(--white);
+    color: var(--white);
+    transition: transform .2s ease;
+}
+
+.project-card:nth-child(even) {
+    background: var(--green);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-number {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 45px;
+}
+
+.project-card h2 {
+    color: var(--white);
+    font-size: clamp(30px, 4vw, 48px);
+    line-height: 1;
+    margin-bottom: 18px;
+}
+
+.project-card p {
+    color: var(--white);
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.project-lifecycle {
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid var(--white);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 22px;
+    color: var(--white);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   CASE STUDY HEADER
+========================================= */
+
+.case-study {
+    padding-top: 145px;
+}
+
+.case-study-header {
+    max-width: 900px;
+    margin-bottom: 45px;
+}
+
+.case-study-label {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.case-study-header h1 {
+    color: var(--white);
+    font-size: clamp(55px, 9vw, 105px);
+    line-height: .9;
+    letter-spacing: -5px;
+    margin-bottom: 25px;
+}
+
+.case-study-summary {
+    max-width: 800px;
+    color: var(--white);
+    font-size: 19px;
+    line-height: 1.65;
+}
+
+
+/* =========================================
+   LIFECYCLE NAV
+========================================= */
+
+.lifecycle-nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+    margin-bottom: 55px;
+}
+
+.lifecycle-nav-item {
+    padding: 18px;
+    min-height: 95px;
+    background: var(--orange);
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+.lifecycle-nav-item:nth-child(even) {
+    background: var(--green);
+}
+
+.lifecycle-nav-number {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.lifecycle-nav-item strong {
+    color: var(--white);
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+
+/* =========================================
+   LIFECYCLE STAGES
+========================================= */
+
+.lifecycle-stage {
+    margin-bottom: 14px;
+    border: 2px solid var(--white);
+    background: var(--green);
+}
+
+.lifecycle-stage:nth-child(even) {
+    background: var(--orange);
+}
+
+.stage-header {
+    display: flex;
+    align-items: baseline;
+    gap: 18px;
+    padding: 24px 28px 18px;
+    border-bottom: 1px solid var(--white);
+}
+
+.stage-number {
+    color: var(--white);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.stage-header h2 {
+    color: var(--white);
+    font-size: clamp(28px, 4vw, 48px);
+    line-height: 1;
+}
+
+.stage-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.stage-block {
+    padding: 24px 28px;
+    border-bottom: 1px solid var(--white);
+}
+
+.stage-block:nth-child(odd) {
+    border-right: 1px solid var(--white);
+}
+
+.stage-block:nth-last-child(-n+2) {
+    border-bottom: none;
+}
+
+.stage-block h3 {
+    margin-bottom: 10px;
+    color: var(--white);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.stage-block p,
+.stage-block li {
+    color: var(--white);
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.stage-block ul {
+    padding-left: 18px;
+    margin: 0;
+}
+
+.stage-block li {
+    margin-bottom: 7px;
+}
+
+.stage-outcome {
+    grid-column: 1 / -1;
+    border-right: none !important;
+    background: rgba(255, 255, 255, .08);
+}
+
+.stage-outcome strong {
+    color: var(--white);
+    font-size: 18px;
+}
+
+
+/* =========================================
+   PRODUCT TAKEAWAY
+========================================= */
+
+.product-takeaway {
+    margin: 45px 0 20px;
+    padding: 30px;
+    border: 2px solid var(--white);
+    background: var(--orange);
+}
+
+.product-takeaway h2 {
+    color: var(--white);
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.product-takeaway p {
+    color: var(--white);
+    max-width: 850px;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.proposed {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 4px 7px;
+    border: 1px solid var(--white);
+    color: var(--white);
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    vertical-align: middle;
+}

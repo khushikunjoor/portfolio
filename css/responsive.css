@@ -1,0 +1,122 @@
+@media (max-width: 900px) {
+
+    .nav-links {
+        position: absolute;
+
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+
+        padding: 24px 6%;
+
+        background: var(--orange);
+
+        border-bottom: 2px solid var(--white);
+
+        display: none;
+
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 18px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .hero-circle {
+        width: 280px;
+        height: 280px;
+
+        right: -125px;
+        top: 72%;
+    }
+
+    .hero-circle span {
+        font-size: 18px;
+    }
+
+    .hero-circle span:nth-child(2) {
+        font-size: 30px;
+    }
+
+    .hero-circle span:nth-child(3) {
+        font-size: 14px;
+    }
+
+    .education-header {
+        flex-direction: column;
+    }
+
+    .experience-item {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .projects-grid,
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-category,
+    .skill-category:nth-child(even) {
+        padding-left: 0;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    main {
+        padding-top: 68px;
+    }
+
+    section {
+        padding: 80px 6%;
+    }
+
+    .navbar {
+        padding: 16px 6%;
+    }
+
+    .hero {
+        min-height: calc(100vh - 68px);
+
+        padding: 85px 6% 80px;
+    }
+
+    .hero h1 {
+        font-size: 68px;
+        letter-spacing: -5px;
+    }
+
+    .hero-description,
+    .page-intro,
+    .about-story,
+    .contact-content p {
+        font-size: 17px;
+    }
+
+    .hero-circle {
+        width: 220px;
+        height: 220px;
+
+        right: -100px;
+    }
+
+    .project-card {
+        min-height: 350px;
+        padding: 28px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
